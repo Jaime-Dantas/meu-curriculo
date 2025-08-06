@@ -1,79 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo | Jaime Silva Dantas</title>
+  <title>Jaime Silva Dantas | Currículo</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8fafc;
-    }
-  </style>
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body class="text-slate-800">
-  <div class="max-w-4xl mx-auto px-4 py-10">
-    <header class="text-center mb-10">
-      <h1 class="text-3xl font-bold">Jaime Silva Dantas</h1>
-      <p class="text-lg text-amber-600">Desenvolvedor Full Stack | Analista de Dados e BI</p>
-      <p>Fortaleza/CE</p>
-      <p>(85) 9 8526-1291 / (85) 9 8658-6527</p>
-      <p><a class="text-blue-600 underline" href="mailto:jaimesilvajk@gmail.com">jaimesilvajk@gmail.com</a></p>
-      <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
-    </header>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-amber-400 pb-1 mb-4">Resumo Profissional</h2>
-      <p>
-        Atuo como Analista de Dados na Empresa de Tecnologia e Informações da Previdência Social. Tenho experiência com dashboards, BI e foco na clareza e performance de dados para tomada de decisões. Utilizo Java Spring, JPA e JavaScript para integrar frontend e backend. Em times ágeis, traduzo necessidades de stakeholders em soluções técnicas de alto valor, assegurando entregas alinhadas à visão estratégica e com impacto real no negócio.
-      </p>
-    </section>
-
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-amber-400 pb-1 mb-4">Experiência Profissional</h2>
-      <div class="mb-6">
-        <h3 class="text-lg font-bold">Dataprev – Estagiário de Análise de Dados</h3>
-        <p class="text-sm text-slate-600">Set/2023 – Atual</p>
-        <ul class="list-disc list-inside mt-2 space-y-1">
-          <li>Desenvolvimento e manutenção de dashboards com foco em clareza e performance.</li>
-          <li>Interfaces dinâmicas com JavaScript e consumo de APIs RESTful com Java Spring e JPA.</li>
-          <li>Gestão de bancos Oracle SQL e PostgreSQL.</li>
-          <li>Colaboração em times ágeis e comunicação com stakeholders.</li>
-          <li>Documentação de soluções e controle de versões com Git.</li>
-        </ul>
+<body class="bg-slate-100 text-slate-800">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-800 text-white flex flex-col justify-between p-6 sticky top-0 h-screen">
+      <div>
+        <h1 class="text-xl font-bold">Jaime Silva Dantas</h1>
+        <p class="text-sm text-amber-400">Desenvolvedor Full Stack & Analista de BI</p>
+        <nav class="mt-8 space-y-4">
+          <a href="#resumo" class="block hover:text-amber-400">Resumo</a>
+          <a href="#experiencia" class="block hover:text-amber-400">Experiência</a>
+          <a href="#formacao" class="block hover:text-amber-400">Formação</a>
+          <a href="#habilidades" class="block hover:text-amber-400">Habilidades</a>
+          <a href="#idiomas" class="block hover:text-amber-400">Idiomas</a>
+          <a href="#contato" class="block hover:text-amber-400">Contato</a>
+        </nav>
       </div>
-
-      <div class="mb-6">
-        <h3 class="text-lg font-bold">WFS | ORBITAL – Auxiliar de Serviços ao Passageiro</h3>
-        <p class="text-sm text-slate-600">Ago/2019 – Ago/2023</p>
-        <ul class="list-disc list-inside mt-2 space-y-1">
-          <li>Planejamento e execução das operações de embarque/desembarque de passageiros especiais.</li>
-          <li>Auxílio desde o check-in até o embarque.</li>
-        </ul>
+      <div class="space-y-4">
+        <div class="flex space-x-2">
+          <button class="lang-btn active px-2 py-1 text-sm border border-slate-500 rounded text-white" data-lang="pt">PT</button>
+          <button class="lang-btn px-2 py-1 text-sm border border-slate-500 rounded text-white" data-lang="en">EN</button>
+        </div>
+        <button onclick="window.print()" class="w-full text-sm border border-slate-500 px-3 py-2 rounded hover:bg-amber-500 hover:text-white">Imprimir</button>
+        <p class="text-xs text-slate-400">&copy; 2025 Jaime Silva Dantas<br>Fortaleza, Ceará, Brasil</p>
       </div>
-    </section>
+    </aside>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-amber-400 pb-1 mb-4">Formação Acadêmica</h2>
-      <p>Análise e Desenvolvimento de Sistemas - Centro Universitário Estácio do Ceará (Conclusão 2025)</p>
-    </section>
+    <!-- Main content -->
+    <main class="flex-1 p-8 space-y-12">
+      <section id="resumo">
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Resumo Profissional</h2>
+        <p>
+          Atuo como Analista de Dados na Empresa de Tecnologia e Informações da Previdência Social. Tenho experiência com dashboards, BI e foco na clareza e performance de dados para tomada de decisões. Utilizo Java Spring, JPA e JavaScript para integrar frontend e backend. Em times ágeis, traduzo necessidades de stakeholders em soluções técnicas de alto valor, assegurando entregas alinhadas à visão estratégica e com impacto real no negócio.
+        </p>
+      </section>
 
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold border-b-2 border-amber-400 pb-1 mb-4">Habilidades Técnicas</h2>
-      <ul class="list-disc list-inside space-y-1">
-        <li><strong>Linguagens:</strong> Java, JavaScript, Python, SQL, Shell Script</li>
-        <li><strong>Frameworks:</strong> Node.js, React, Spring, JPA</li>
-        <li><strong>Versionamento:</strong> Git, GitFlow</li>
-        <li><strong>Bancos de Dados:</strong> Oracle SQL, PostgreSQL, MySQL</li>
-        <li><strong>Testes e Qualidade:</strong> Selenium, TestLink, boas práticas de código</li>
-      </ul>
-    </section>
+      <section id="experiencia">
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Experiência Profissional</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-bold">Dataprev – Estagiário de Análise de Dados</h3>
+            <p class="text-sm text-slate-600">Set/2023 – Atual</p>
+            <ul class="list-disc list-inside mt-1 text-slate-700">
+              <li>Dashboards com foco em clareza e performance.</li>
+              <li>Interfaces com JavaScript e consumo de APIs com Java Spring e JPA.</li>
+              <li>Gestão de dados com Oracle SQL e PostgreSQL.</li>
+              <li>Integração com stakeholders e squads ágeis.</li>
+              <li>Documentação e versionamento com Git.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold">WFS | ORBITAL – Auxiliar de Serviços ao Passageiro</h3>
+            <p class="text-sm text-slate-600">Ago/2019 – Ago/2023</p>
+            <ul class="list-disc list-inside mt-1 text-slate-700">
+              <li>Planejamento e execução de embarque e desembarque de passageiros especiais.</li>
+              <li>Atendimento completo desde check-in até a aeronave.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <footer class="text-center text-sm text-slate-500 mt-10">
-      <p>&copy; 2025 Jaime Silva Dantas</p>
-    </footer>
+      <section id="formacao">
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Formação Acadêmica</h2>
+        <p>Análise e Desenvolvimento de Sistemas - Centro Universitário Estácio do Ceará (Conclusão 2025)</p>
+      </section>
+
+      <section id="habilidades">
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Habilidades Técnicas</h2>
+        <ul class="list-disc list-inside text-slate-700 space-y-1">
+          <li><strong>Linguagens:</strong> Java, JavaScript, Python, SQL, Shell Script</li>
+          <li><strong>Frameworks:</strong> Node.js, React, Spring, JPA</li>
+          <li><strong>Versionamento:</strong> Git, GitFlow</li>
+          <li><strong>Bancos de Dados:</strong> Oracle SQL, PostgreSQL, MySQL</li>
+          <li><strong>Testes e Qualidade:</strong> Selenium, TestLink, boas práticas de código</li>
+        </ul>
+      </section>
+
+      <section id="idiomas">
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Idiomas</h2>
+        <p><strong>Português:</strong> Nativo</p>
+        <p><strong>Inglês:</strong> Avançado (leitura, escrita e conversação)</p>
+      </section>
+
+      <section id="contato">
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Contato</h2>
+        <p>?? jaimesilvajk@gmail.com</p>
+        <p>?? (85) 9 8526-1291 / (85) 9 8658-6527</p>
+        <p>?? <a href="#" class="text-blue-600 underline">LinkedIn</a> | <a href="#" class="text-blue-600 underline">GitHub</a></p>
+      </section>
+    </main>
   </div>
+
+  <script src="src/js/lang.js"></script>
 </body>
 </html>
