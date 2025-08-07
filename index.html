@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaime Silva Dantas | Currículo</title>
+  <title>Jaime Silva Dantas | CurrÃ­culo</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -13,14 +13,14 @@
     <aside class="w-64 bg-slate-800 text-white flex flex-col justify-between p-6 sticky top-0 h-screen">
       <div>
         <h1 class="text-xl font-bold">Jaime Silva Dantas</h1>
-        <p class="text-sm text-amber-400">Desenvolvedor Full Stack & Analista de BI</p>
+        <p class="text-sm text-amber-400" data-key="titulo">Desenvolvedor Full Stack & Analista de BI</p>
         <nav class="mt-8 space-y-4">
-          <a href="#resumo" class="block hover:text-amber-400">Resumo</a>
-          <a href="#experiencia" class="block hover:text-amber-400">Experiência</a>
-          <a href="#formacao" class="block hover:text-amber-400">Formação</a>
-          <a href="#habilidades" class="block hover:text-amber-400">Habilidades</a>
-          <a href="#idiomas" class="block hover:text-amber-400">Idiomas</a>
-          <a href="#contato" class="block hover:text-amber-400">Contato</a>
+          <a href="#resumo" class="block hover:text-amber-400" data-key="resumo">Resumo</a>
+          <a href="#experiencia" class="block hover:text-amber-400" data-key="experiencia">ExperiÃªncia</a>
+          <a href="#formacao" class="block hover:text-amber-400" data-key="formacao">FormaÃ§Ã£o</a>
+          <a href="#habilidades" class="block hover:text-amber-400" data-key="habilidades">Habilidades</a>
+          <a href="#idiomas" class="block hover:text-amber-400" data-key="idiomas">Idiomas</a>
+          <a href="#contato" class="block hover:text-amber-400" data-key="contato">Contato</a>
         </nav>
       </div>
       <div class="space-y-4">
@@ -29,75 +29,70 @@
           <button class="lang-btn px-2 py-1 text-sm border border-slate-500 rounded text-white" data-lang="en">EN</button>
         </div>
         <button onclick="window.print()" class="w-full text-sm border border-slate-500 px-3 py-2 rounded hover:bg-amber-500 hover:text-white">Imprimir</button>
-        <p class="text-xs text-slate-400">&copy; 2025 Jaime Silva Dantas<br>Fortaleza, Ceará, Brasil</p>
+        <p class="text-xs text-slate-400">&copy; 2025 Jaime Silva Dantas<br>Fortaleza, CearÃ¡, Brasil</p>
       </div>
     </aside>
 
     <!-- Main content -->
     <main class="flex-1 p-8 space-y-12">
       <section id="resumo">
-        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Resumo Profissional</h2>
-        <p>
-          Atuo como Analista de Dados na Empresa de Tecnologia e Informações da Previdência Social. Tenho experiência com dashboards, BI e foco na clareza e performance de dados para tomada de decisões. Utilizo Java Spring, JPA e JavaScript para integrar frontend e backend. Em times ágeis, traduzo necessidades de stakeholders em soluções técnicas de alto valor, assegurando entregas alinhadas à visão estratégica e com impacto real no negócio.
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4" data-key="resumo">Resumo Profissional</h2>
+        <p data-key="resumo_cont">
+          Atuo como Analista de Dados na Empresa de Tecnologia e InformaÃ§Ãµes da PrevidÃªncia Social. Tenho experiÃªncia com dashboards, BI e foco na clareza e performance de dados para tomada de decisÃµes. Utilizo Java Spring, JPA e JavaScript para integrar frontend e backend. Em times Ã¡geis, traduzo necessidades de stakeholders em soluÃ§Ãµes tÃ©cnicas de alto valor, assegurando entregas alinhadas Ã  visÃ£o estratÃ©gica e com impacto real no negÃ³cio.
         </p>
       </section>
 
       <section id="experiencia">
-        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Experiência Profissional</h2>
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4" data-key="experiencia">ExperiÃªncia Profissional</h2>
         <div class="space-y-6">
-          <div>
-            <h3 class="font-bold">Dataprev – Estagiário de Análise de Dados</h3>
-            <p class="text-sm text-slate-600">Set/2023 – Atual</p>
+          <div data-key="exp_data">
+            <h3 class="font-bold">Dataprev â€“ EstagiÃ¡rio de AnÃ¡lise de Dados</h3>
+            <p class="text-sm text-slate-600">Set/2023 â€“ Atual</p>
             <ul class="list-disc list-inside mt-1 text-slate-700">
               <li>Dashboards com foco em clareza e performance.</li>
               <li>Interfaces com JavaScript e consumo de APIs com Java Spring e JPA.</li>
-              <li>Gestão de dados com Oracle SQL e PostgreSQL.</li>
-              <li>Integração com stakeholders e squads ágeis.</li>
-              <li>Documentação e versionamento com Git.</li>
+              <li>GestÃ£o de dados com Oracle SQL e PostgreSQL.</li>
+              <li>IntegraÃ§Ã£o com stakeholders e squads Ã¡geis.</li>
+              <li>DocumentaÃ§Ã£o e versionamento com Git.</li>
             </ul>
           </div>
-          <div>
-            <h3 class="font-bold">WFS | ORBITAL – Auxiliar de Serviços ao Passageiro</h3>
-            <p class="text-sm text-slate-600">Ago/2019 – Ago/2023</p>
-            <ul class="list-disc list-inside mt-1 text-slate-700">
-              <li>Planejamento e execução de embarque e desembarque de passageiros especiais.</li>
-              <li>Atendimento completo desde check-in até a aeronave.</li>
-            </ul>
+          <div data-key="exp_orb">
+            
           </div>
         </div>
       </section>
 
       <section id="formacao">
-        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Formação Acadêmica</h2>
-        <p>Análise e Desenvolvimento de Sistemas - Centro Universitário Estácio do Ceará (Conclusão 2025)</p>
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4" data-key="formacao">FormaÃ§Ã£o AcadÃªmica</h2>
+        <p>AnÃ¡lise e Desenvolvimento de Sistemas - Centro UniversitÃ¡rio EstÃ¡cio do CearÃ¡ (ConclusÃ£o 2025)</p>
       </section>
 
       <section id="habilidades">
-        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Habilidades Técnicas</h2>
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4" data-key="habilidades">Habilidades TÃ©cnicas</h2>
         <ul class="list-disc list-inside text-slate-700 space-y-1">
           <li><strong>Linguagens:</strong> Java, JavaScript, Python, SQL, Shell Script</li>
           <li><strong>Frameworks:</strong> Node.js, React, Spring, JPA</li>
           <li><strong>Versionamento:</strong> Git, GitFlow</li>
           <li><strong>Bancos de Dados:</strong> Oracle SQL, PostgreSQL, MySQL</li>
-          <li><strong>Testes e Qualidade:</strong> Selenium, TestLink, boas práticas de código</li>
+          <li><strong>Testes e Qualidade:</strong> Selenium, TestLink, boas prÃ¡ticas de cÃ³digo</li>
         </ul>
       </section>
 
       <section id="idiomas">
-        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Idiomas</h2>
-        <p><strong>Português:</strong> Nativo</p>
-        <p><strong>Inglês:</strong> Avançado (leitura, escrita e conversação)</p>
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4" data-key="idiomas">Idiomas</h2>
+        <p data-key="idioma_pt"><strong>PortuguÃªs:</strong> Nativo</p>
+        <p data-key="idioma_en"><strong>InglÃªs:</strong> AvanÃ§ado (leitura, escrita e conversaÃ§Ã£o)</p>
       </section>
 
       <section id="contato">
-        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4">Contato</h2>
-        <p>?? jaimesilvajk@gmail.com</p>
-        <p>?? (85) 9 8526-1291 / (85) 9 8658-6527</p>
-        <p>?? <a href="#" class="text-blue-600 underline">LinkedIn</a> | <a href="#" class="text-blue-600 underline">GitHub</a></p>
+        <h2 class="text-2xl font-bold border-b-4 border-amber-400 pb-1 mb-4" data-key="contato">Contato</h2>
+        <p>ðŸ“§ jaimesilvajk@gmail.com</p>
+        <p>ðŸ“± (85) 9 8526-1291 / (85) 9 8658-6527</p>
+        <p>ðŸ”— <a href="#" class="text-blue-600 underline">LinkedIn</a> | <a href="#" class="text-blue-600 underline">GitHub</a></p>
       </section>
     </main>
   </div>
 
-  <script src="src/js/lang.js"></script>
+  <script src="src/js/script.js"></script>
 </body>
 </html>
